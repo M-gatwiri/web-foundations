@@ -1,0 +1,7 @@
+# Reflection
+
+The most difficult concept in this course was understanding how to design systems that remain reliable when multiple users perform operations simultaneously. It is easy to check whether a seat is available, but it is harder to guarantee that two users cannot purchase the same seat at the same time. I worked through this challenge by applying database transactions, row-level locking, and unique constraints to the TicketHub design. Breaking the problem into individual steps helped me understand why application-level checks alone are insufficient.
+
+Based on the feedback and lessons from my capstone, I would improve how I plan and test asynchronous workflows. My Northstar project helped me understand the importance of handling different outcomes, including successful operations, duplicate requests, and failed verification. I would improve the project by planning state transitions earlier, strengthening persistence and retry handling, and testing failure scenarios more thoroughly. I would also add more automated tests to verify that the system behaves correctly when requests are repeated or external services respond unexpectedly.
+
+Next, I want to learn more about system design through practical implementation. In particular, I want to explore database indexing, caching with Redis, message queues, and load testing. I would also like to practise building and testing APIs under concurrent traffic. These skills will help me design applications that are not only functional but also reliable, secure, and scalable as the number of users grows.
